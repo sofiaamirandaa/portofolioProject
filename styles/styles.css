@@ -1,0 +1,32 @@
+body{
+    font-family:'Times New Roman', Times, sans-serif;
+    font-size 32px;
+    text-align: justify;
+}
+
+.nav {
+    list-style-type: none;
+    text-align: center; 
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+.pictureOfGirl{
+    display: flex;
+    position: absolute;
+    padding-right: 20px;
+    align-items: center;
+
+}
+
+.logos{
+    display: flex;
+    align-content: space-between;
+    margin
+}
