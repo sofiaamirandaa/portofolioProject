@@ -1,17 +1,44 @@
+html {
+  scroll-padding-top: 75px; /* height of sticky header */
+}
+
 body{
     font-family:'Times New Roman', Times, sans-serif;
     font-size: 16px;
     text-align: justify;
+    padding-top: 100px;
+    padding-left: 20px;
 }
 
-.nav {
+h2 {
+  top: -1000px;
+}
+
+nav {
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  background-color: white;
+  width: 100%;
+}
+
+.navName {
+  float: left;
+  padding: 0;
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.navList {
     list-style-type: none;
-    text-align: right; 
+    float: right; 
     padding: 0;
     margin: 0;
   }
   
-  .nav li {
+  .navList li {
     display: inline-block;
     font-size: 20px;
     padding: 20px;
@@ -25,6 +52,7 @@ body{
 .aboutMe{
   display: inline-block;
   width: 50%;
+  line-height: 30px;
 }
 
 .pictureOfGirl{
@@ -32,8 +60,31 @@ body{
     float:right;
     padding-right: 20px;
     align-items: center;
-    position: relative;
+}
 
+
+.projects {
+line-height: 50px;
+}
+
+#puppyYoga, #travelAgency {
+  width: 500px;
+  height: 500px;
+  padding: 50px;
+  
+}
+
+
+button{
+    background-color:aquamarine;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 20px;
+    cursor: pointer;
 }
 
 .logos{
@@ -44,4 +95,21 @@ body{
 
 .logos img {
   margin: 0 10px;
+  padding-bottom: 40px;
+}
+
+.socialIcon {
+  width: 40px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; 
+  }
 }
